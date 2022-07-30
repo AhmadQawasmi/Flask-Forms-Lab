@@ -16,7 +16,8 @@ facebook_friends=["Loai","Yonathan","Adan", "George", "Fouad", "Celina"]
 @app.route('/', methods = ['get','post'])  # '/' for the default page
 def login():
 	if request.method =='get':
-      return render_template('login.html')
+
+return render_template('login.html')
   else:
    if username ==	request.form["username"] == username and request.form["password"] == password:        
   	       return redirect(url_for('home'))
